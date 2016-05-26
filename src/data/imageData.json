@@ -2,43 +2,36 @@
 	{
 		"fileName": "1.png",
 		"title": "anti-mage",
-		"desc" : "Mana Void
-		For each point of mana missing by the target unit, damage is dealt to it and surrounding enemies. The main target is also mini-stunned."
+		"desc" : "wawt tht herlk"
 	},
 	{
 		"fileName": "2.png",
 		"title": "drow",
-		"desc" : "Marksmanship
-Drow's experiences in battle improve her accuracy and effectiveness in combat, providing a passive bonus to Agility. Grants no bonus if there are enemy heroes within 400 range. Upgradable by Aghanim's Scepter."
+		"desc" : "wat does that mean"
 	},
 	{
 		"fileName": "3.png",
 		"title": "jugg",
-		"desc" : "Omnislash
-Juggernaut leaps towards the target enemy unit with a damaging attack, and then slashes other nearby enemy units, dealing between 200-225 damage per slash. Juggernaut is invulnerable for the duration. Upgradable by Aghanim's Scepter."
+		"desc" : "-225 damage per slash. Jule by Aghanim's Scepter."
 	},
 	{
 		"fileName": "4.png",
 		"title": "mirana",
-		"desc" : "Moonlight Shadow
-Turns Mirana and all allied heroes invisible. If a hero is revealed, invisibility will restore after the fade delay as long as Moonlight Shadow's duration has not expired."
+		"desc" : "Moonlight Shadow Turns Mirana and all al"
 	},
 	{
 		"fileName": "5.png",
 		"title": "morphling",
-		"desc" : "Replicate
-Morphling replicates any hero, friend or foe, dealing 80% of the original Hero's outgoing damage while taking 100% of any incoming damage. At any time, Morphling can instantly take the position of the Replicate for 150 mana. If Morphling dies, the Replicate will expire."
+		"desc" : "Replicate Morphling replicates any hero,"
 	},
 	{
 		"fileName": "6.png",
 		"title": "Phlancer",
-		"desc" : "Juxtapose
-Phantom Lancer has a chance to fracture his presence, creating an illusion of himself. Illusions also have a chance to fracture further. Illusions created from Phantom Lancer last for 8 seconds, while illusions created from other illusions last 4 seconds."
+		"desc" : "Juxtapose Phantom Lancer has a chance to fracture his presence,"
 	},
 	{
 		"fileName": "7.png",
 		"title": "venge",
-		"desc" : "Nether Swap
-Instantaneously swaps positions with a target Hero, friend or enemy. Nether Swap interrupts channeling abilities on the target. Upgradable by Aghanim's Scepter."
+		"desc" : "Nether Swap Instantaneously swaps positions with a target Hero"
 	}
 ]
