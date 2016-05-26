@@ -37,30 +37,20 @@ html,body {
       background-color: #eee;
       box-sizing: border-box;
     }
+
+    figcaption{
+      text-align: center;
+
+      .img-title{
+        margin: 20px 0 0 0;
+
+        color: #a7a0a2;
+        font-size: 16px;
+      }
+    }
   }
 }
-/*
-.img-figure {
-  position: absolute;
-  width: 320px;
-  height: 250px;
-  margin: 0;
-  padding: 30px;
 
-  background-color: #fff;
-  box-sizing: border-box;
-}*/
-
-figcaption{
-  text-align: center;
-}
-
-.img-title{
-  margin: 20px 0 0 0;
-
-  color: #a7a0a2;
-  font-size: 16px;
-}
 
 .controller-nav {
   position: absolute;

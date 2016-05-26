@@ -41,7 +41,7 @@ config.module.loaders.push({
 
 config.module.loaders.push({
   test: /\.json$/,
-  loader: 'json-loader'
+  loader: 'json-loader' 
 };
 
 module.exports = config;
