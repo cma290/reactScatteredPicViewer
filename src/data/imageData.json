@@ -33,5 +33,51 @@
 		"fileName": "7.png",
 		"title": "venge",
 		"desc" : "Nether Swap Instantaneously swaps positions with a target Hero"
+	},
+	{
+		"fileName": "8.png",
+		"title": "riki",
+		"desc" : "riki"
+	},
+	{
+		"fileName": "9.png",
+		"title": "sniper",
+		"desc" : "sniperino"
+	},
+	{
+		"fileName": "10.png",
+		"title": "TemplarAssasin",
+		"desc" : "TemplarAssasin"
+	},
+	{
+		"fileName": "11.png",
+		"title": "Luna",
+		"desc" : "Luna"
+	},
+	{
+		"fileName": "12.png",
+		"title": "Bounty Hunter",
+		"desc" : "Bounty Hunter"
+	},
+	{
+		"fileName": "13.png",
+		"title": "Ursa",
+		"desc" : "Ursa"
+	},
+	{
+		"fileName": "14.png",
+		"title": "Gyrocopter",
+		"desc" : "Gyrocopter"
+	},
+	{
+		"fileName": "15.png",
+		"title": "Lone Druid",
+		"desc" : "Lone Druid"
+	},
+	{
+		"fileName": "16.png",
+		"title": "Naga Siren",
+		"desc" : "Naga Siren"
 	}
+
 ]

@@ -6,6 +6,9 @@ import React from 'react';
 let imageData = require('../data/imageData.json');
 //let yeomanImage = require('../images/yeoman.png');
 
+/*
+ *
+ */  
 function genImageURL(imageDataArr) {
 	for (let i = 0, j = imageDataArr.length; i < j; ++i) {
 		let imageDataItem = imageDataArr[i];
@@ -17,8 +20,19 @@ function genImageURL(imageDataArr) {
 }
 imageData = genImageURL(imageData);
 
+/*
+ * get a random number from a given range
+ */
 function randomRange(low, high) {
-	return low + Math.ceil(Math.random() * (high - low));
+	return Math.ceil(Math.random() * (high - low) + low);
+}
+
+/*
+ *
+ */
+var RandomRange = 35;
+function getRandomDegree() {
+  return ((Math.random() > 0.5 ? '' : '-') + Math.random() * RandomRange);
 }
 
 var ImgFigure = React.createClass({
@@ -29,6 +43,11 @@ var ImgFigure = React.createClass({
 		if (this.props.arrange.pos) {
 			styleObj = this.props.arrange.pos;
 		}
+    if (this.props.arrange.rotate) {
+      (['-moz-', '-ms-', '-webkit-', '']).forEach(function(value) {
+        styleObj[value + 'transform'] = 'rotate(' + this.props.arrange.rotate + 'deg';
+      }.bind(this));
+    }
 
 		return (
 			<figure className="img-figure" style={styleObj}>
@@ -47,11 +66,11 @@ class AppComponent extends React.Component {
   
   //image's topleft cornor position range. To make it not overlap with centered pic or out of the screen too much.
   constructor (props) {
-  	super();
+  	super(props);
   	this.state = {
 	  	centerPos: {
-	  		left: 0,
-	  		top: 0
+	  		left: 800,
+	  		top: 200
 	  	},
 	  	hPosRange: { // hori
 	  		leftSecX: [0, 0],
@@ -68,6 +87,7 @@ class AppComponent extends React.Component {
 	    			left: '0',
 	    			top: '0'
 	    		}
+          rotate : 0
 	    	}*/
 	    ]
   	};
@@ -76,8 +96,8 @@ class AppComponent extends React.Component {
   componentDidMount() {
   	this.setState({
   		centerPos: {
-	  		left: '300px',
-	  		right: '200px',
+	  		left: 0,
+	  		top: 0
 	  	},
 	  	hPosRange: { // hori
 	  		leftSecX: [0, 0],
@@ -98,19 +118,23 @@ class AppComponent extends React.Component {
   		hPosRange = this.state.hPosRange,
   		vPosRange = this.state.vPosRange;
 
-  		imgsArrangeArr[centerIndex] = centerPos;
+      imgsArrangeArr[centerIndex].pos = centerPos;
+  		imgsArrangeArr[centerIndex].rotate = 0;
+
   		imgsArrangeArr.forEach(function(value,index) {
   			//if (index == centerIndex) {
   				//continue;//Unsyntactic continue
   			//}
   			if (index !== centerIndex) {
   				value.pos = {
-  					left: randomRange(0, 1000),
+  					left: randomRange(0, 2000),
   					top: randomRange(0, 500)
-  				}
+  				};
+          value.rotate = getRandomDegree();
   			}
   		});
-  		this.setState({imgsArrangeArr: imgsArrangeArr});
+  		this.setState({imgsArrangeArr: imgsArrangeArr 
+  		});
   }
 
   render() {
@@ -124,7 +148,8 @@ class AppComponent extends React.Component {
   				pos: {
   					left: 0,
   					top: 0
-  				}
+  				},
+          rotate: 0
   			}
   		}
 

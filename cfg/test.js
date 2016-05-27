@@ -5,8 +5,7 @@ let srcPath = path.join(__dirname, '/../src/');
 
 let baseConfig = require('./base');
 
-// Add needed plugins here
-let BowerWebpackPlugin = require('bower-webpack-plugin');
+// Add needed plugins herelet BowerWebpackPlugin = require('bower-webpack-plugin');
 
 module.exports = {
   devtool: 'eval',
