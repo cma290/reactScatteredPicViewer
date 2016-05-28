@@ -30,18 +30,20 @@ let config = Object.assign({}, baseConfig, {
 });
 
 // Add needed loaders to the defaults here
-config.module.loaders.push({
+config.module.loaders.push([{
   test: /\.(js|jsx)$/,
   loader: 'babel',
   include: [].concat(
     config.additionalPaths,
     [ path.join(__dirname, '/../src') ]
-  )
-};
+    )
+  },
+  // { // this is added in defaults.js
+  //   test: /\.json$/,
+  //   loader: 'json-loader' 
+  // }
+]);
 
-config.module.loaders.push({
-  test: /\.json$/,
-  loader: 'json-loader' 
-};
+// config.module.loaders.push();
 
 module.exports = config;

@@ -3,7 +3,7 @@ require('styles/App.scss');
 
 import React from 'react';
 
-let imageData = require('../data/imageData.json');
+var imageData = require('../data/imageData.json');
 //let yeomanImage = require('../images/yeoman.png');
 
 /*
@@ -60,15 +60,15 @@ var ImgFigure = React.createClass({
 		}
     
     if (this.props.arrange.rotate) {
-      (['-moz-', '-ms-', '-webkit-', '']).forEach(function(value) {
-        styleObj[value + 'transform'] = 'rotate(' + this.props.arrange.rotate + 'deg';
+      (['MozTransform', 'msTransform', 'WebkitTransform', '']).forEach(function(value) {
+        styleObj[value] = 'rotate(' + this.props.arrange.rotate + 'deg';
       }.bind(this));
     }
 
     if (this.props.arrange.isCenter) {
       styleObj.zIndex = 11;
       styleObj.border = '5px solid #73AD21';
-      styleObj.borderRadius = '15px';
+      styleObj.borderRadius = '0px';
     }
 
     var imgFigureClassName = 'img-figure';
@@ -216,7 +216,7 @@ class AppComponent extends React.Component {
   			}
   		}
 
-  		imgFigures.push(<ImgFigure data={value}
+  		imgFigures.push(<ImgFigure key={index} data={value}
   						ref={'imgFigure' + index}
               arrange={this.state.imgsArrangeArr[index]}
   						inverse={this.inverse(index)}

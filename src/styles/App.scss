@@ -73,13 +73,13 @@ html,body {
         text-align: left;
 
         background-color: #eee;
-        border: 5px solid #73AD21;
-        border-radius: 15px;
+        /*border: 5px solid #73AD21;*/
+        /*border-radius: 0px;*/
 
         box-sizing: border-box;
         transform: rotateY(180deg) translateZ(1px);
         backface-visibility: hidden;
-
+        
         p {
           margin: 0;
         }

@@ -2,7 +2,7 @@
 	{
 		"fileName": "1.png",
 		"title": "anti-mage",
-		"desc" : "Mana Void: For each point of mana missing by the target unit, damage is dealt to it and surrounding enemies. The main target is also mini-stunned."
+		"desc" : "Mana Void For each point of mana missing by the target unit, damage is dealt to it and surrounding enemies. The main target is also mini-stunned."
 	},
 	{
 		"fileName": "2.png",
@@ -27,7 +27,7 @@
 	{
 		"fileName": "6.png",
 		"title": "Phlancer",
-		"desc" : "Juxtapose Phantom Lancer has a chance to fracture his presence,"
+		"desc" : "Juxtapose Phantom Lancer has a chance to fracture his presence"
 	},
 	{
 		"fileName": "7.png",
