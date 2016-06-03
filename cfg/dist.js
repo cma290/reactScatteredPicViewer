@@ -38,7 +38,7 @@ config.module.loaders.push([{
     [ path.join(__dirname, '/../src') ]
     )
   },
-  // { // this is added in defaults.js
+  // { // this is added in defaults.js . Adding this here gives an error when run -dist
   //   test: /\.json$/,
   //   loader: 'json-loader' 
   // }

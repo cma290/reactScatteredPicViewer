@@ -2,6 +2,7 @@ require('normalize.css/normalize.css');
 require('styles/App.scss');
 
 import React from 'react';
+var ReactDOM = require('react-dom')
 
 var imageData = require('../data/imageData.json');
 //let yeomanImage = require('../images/yeoman.png');
@@ -41,7 +42,7 @@ function getRandomDegree() {
 var ImgFigure = React.createClass({
 	
   //img handleClick function
-  handleClick: function (e) {
+  _handleClick: function (e) {
 
     if (this.props.arrange.isCenter) {
       this.props.inverse();
@@ -75,13 +76,13 @@ var ImgFigure = React.createClass({
         imgFigureClassName += this.props.arrange.isInverse ? ' is-inversed' : '';
 		return (
 			<figure className={imgFigureClassName} style={styleObj}
-              onClick={this.handleClick}>
+              onClick={this._handleClick}>
 				<img src={this.props.data.imageURL}
 					 alt={this.props.data.title}
 				/>
 				<figcaption>
 					<h2 className="img-title">{this.props.data.title}</h2>
-          <div className="img-back" onClick={this.handleClick}>
+          <div className="img-back" onClick={this._handleClick}>
             <p>
               {this.props.data.desc}
             </p>
@@ -101,8 +102,8 @@ class AppComponent extends React.Component {
   	super(props);
   	this.state = {
 	  	centerPos: {
-	  		left: 800,
-	  		top: 200
+	  		left: 0,
+	  		top: 0
 	  	},
 	  	hPosRange: { // hori
 	  		leftSecX: [0, 0],
@@ -129,7 +130,7 @@ class AppComponent extends React.Component {
 
   /*
    * closure function for inverse
-   *
+   * _inverse
    */
    inverse(index) {
      return function () {
@@ -142,24 +143,40 @@ class AppComponent extends React.Component {
   }
 
   componentDidMount() {
-  	this.setState({
-  		centerPos: {
-	  		left: 800,
-	  		top: 200
-	  	},
-	  	hPosRange: { // hori
-	  		leftSecX: [0, 0],
-	  		rightSecX: [0, 0],
-	  		y: [0, 0]
-	  	},
-	    vPosRange: { //verti
-	    	x: [0, 0],
-	    	topY: [0, 0]
-	    }
-  	});
+    //get screen size
+    var stageDOM = ReactDOM.findDOMNode(this.refs.stage),
+        stageW = stageDOM.scrollWidth,
+        stageH = stageDOM.scrollHeight,
+        halfStageW = Math.ceil(stageW/2),
+        halfStageH = Math.ceil(stageH/2);
+
+    // get img size      
+    var imgDOM = ReactDOM.findDOMNode(this.refs.imgFigure0), // the first pic's size
+        imgW = imgDOM.scrollWidth,
+        imgH = imgDOM.scrollHeight,
+        halfImgW = Math.ceil(imgW/2),
+        halfImgH = Math.ceil(imgH/2);
+    
+    this.setState({
+      centerPos: {
+        left: halfStageW - halfImgW,
+        top: halfStageH - halfImgH
+      },
+      hPosRange: { // hori
+        leftSecX: [0, 0],
+        rightSecX: [0, 0],
+        y: [0, 0]
+      },
+      vPosRange: { //verti
+        x: [0, 0],
+        topY: [0, 0]
+      }
+    });
+
   	this.rearrange(0); //center img arr[0]
   }
 
+  // _rearrange
   rearrange(centerIndex) {
   	var imgsArrangeArr = this.state.imgsArrangeArr,
   		centerPos = this.state.centerPos,
@@ -168,10 +185,11 @@ class AppComponent extends React.Component {
 
       imgsArrangeArr[centerIndex] = {
        pos: centerPos,
+       
        rotate: 0,
        isCenter: true
-      }
-     
+      };
+      {console.log(this.state.imgsArrangeArr[0].pos)}
 
   		imgsArrangeArr.forEach(function(value,index) {
   			//if (index == centerIndex) {
@@ -180,18 +198,18 @@ class AppComponent extends React.Component {
   			if (index !== centerIndex) {
   				imgsArrangeArr[index] = {
             pos: {
-              left: randomRange(0, 2000),
-              top: randomRange(0, 500)
+              left: randomRange(0, this.state.centerPos.left * 2),
+              top: randomRange(0, this.state.centerPos.top * 2)
             },
             rotate: getRandomDegree(),
             isCenter: false
           }
   			}
-  		});
+  		}.bind(this));
   		this.setState({imgsArrangeArr: imgsArrangeArr});
   }
 
-  //
+  // later change to _center for naming convention
   center(index) {
     return function () {
       this.rearrange(index);
