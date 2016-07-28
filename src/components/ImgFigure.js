@@ -1,5 +1,9 @@
 var React = require('react');
 
+
+function puke (obj) {
+  return <pre>{JSON.stringify(obj, null, ' ')}</pre>
+}
 /*
  * ImgFigure component
  */
@@ -44,11 +48,14 @@ var ImgFigure = React.createClass({
 				<img src={this.props.data.imageURL}
 					   alt={this.props.data.title}/>
 				<figcaption>
-					<h2 className="img-title"> {this.props.data.title} </h2>
+					<h2 className="img-title"> {this.props.data.title}</h2>
+          <div>  </div>
           <div className="img-back" onClick={this._handleClick}>
-            <p> {this.props.data.desc} </p>
+            <div> {this.props.data.desc} </div>
           </div>
-				</figcaption>
+				  
+        </figcaption>
+        
 			</figure>
 		);
 	}

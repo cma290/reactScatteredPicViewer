@@ -1,83 +1,83 @@
 [
 	{
 		"fileName": "1.png",
-		"title": "anti-mage",
-		"desc" : "Mana Void <br>For each point of mana missing by the target unit, damage is dealt to it and surrounding enemies. The main target is also mini-stunned."
+		"title": "ANTI-MAGE",
+		"desc" : "The monks of Turstarkuri watched the rugged valleys below their mountain monastery as wave after wave of invaders swept through the lower kingdoms. Ascetic and pragmatic, in their remote monastic eyrie they remained aloof from mundane strife."
 	},
 	{
 		"fileName": "2.png",
-		"title": "drow",
-		"desc" : "wat does that mean"
+		"title": "DROW RANGER",
+		"desc" : "Drow Ranger's given name is Traxex--a name well suited to the short, trollish, rather repulsive Drow people. But Traxex herself is not a Drow. Her parents were travelers in a caravan set upon by bandits, whose noisy slaughter of innocents."
 	},
 	{
 		"fileName": "3.png",
-		"title": "jugg",
-		"desc" : "-225 damage per slash. Jule by Aghanim's Scepter."
+		"title": "JUGGERNAUT",
+		"desc" : "No one has ever seen the face hidden beneath the mask of Yurnero the Juggernaut. It is only speculation that he even has one. For defying a corrupt lord, Yurnero was exiled from the ancient Isle of Masks--a punishment that saved his life."
 	},
 	{
 		"fileName": "4.png",
-		"title": "mirana",
-		"desc" : "Moonlight Shadow Turns Mirana and all al"
+		"title": "MIRANA",
+		"desc" : "Born to a royal family, a blood princess next in line for the Solar Throne, Mirana willingly surrendered any claim to mundane land or titles when she dedicated herself completely to the service of Selemene, Goddess of the Moon."
 	},
 	{
 		"fileName": "5.png",
-		"title": "morphling",
-		"desc" : "Replicate Morphling replicates any hero,"
+		"title": "MORPHLING",
+		"desc" : "For dark eons the comet circled. Held in thrall to a distant sun, bound by gravity's inexorable pull, the massive ball of ice careened through the blackness between worlds, made strange by its dark journey."
 	},
 	{
 		"fileName": "6.png",
-		"title": "Phlancer",
-		"desc" : "Juxtapose Phantom Lancer has a chance to fracture his presence"
+		"title": "PHANTOM LANCER",
+		"desc" : "The remote village of Pole had no knowledge of the wars raging in the heart of the kingdom. For them, the quiet of spear fishing, and a family meal were all that a full life required. Yet war came for them nonetheless."
 	},
 	{
 		"fileName": "7.png",
-		"title": "venge",
-		"desc" : "Nether Swap Instantaneously swaps positions with a target Hero"
+		"title": "VENGEFUL SPIRIT",
+		"desc" : "Even the most contented Skywrath is an ill-tempered creature, naturally inclined to seek revenge for the slightest insult. But Vengeful Spirit is the essence of vengeance. Once a proud and savage Skywrath scion, Shendelzare was first."
 	},
 	{
 		"fileName": "8.png",
-		"title": "riki",
-		"desc" : "riki"
+		"title": "RIKI",
+		"desc" : "Riki was born middle child to the great dynasty of Tahlin. With an older brother groomed for the throne, and a younger brother coddled and kept, Riki, the small middle son, seemed born for the art of invisibility."
 	},
 	{
 		"fileName": "9.png",
-		"title": "sniper",
-		"desc" : "sniperino"
+		"title": "SNIPER",
+		"desc" : "Kardel Sharpeye was born deep in the mountains of Knollen where, since time immemorial, Keen Folk have survived by hunting the strange, cliff-dwelling steepstalkers above their village, shooting them from a distance."
 	},
 	{
 		"fileName": "10.png",
-		"title": "TemplarAssasin",
-		"desc" : "TemplarAssasin"
+		"title": "TEMPLAR ASSASSIN",
+		"desc" : "Lanaya, the Templar Assassin, came to her calling by a path of curious inquiry. Possessed of a scientific bent, she spent her early years engaged in meticulous study of nature's laws--peering into grimoires of magic and alchemy."
 	},
 	{
 		"fileName": "11.png",
-		"title": "Luna",
-		"desc" : "Luna"
+		"title": "LUNA",
+		"desc" : "How had she been reduced to this? She was once the Scourge of the Plains, a merciless leader of men and beasts, and able to sow terror wherever she dared. Now she was far from her homeland."
 	},
 	{
 		"fileName": "12.png",
-		"title": "Bounty Hunter",
-		"desc" : "Bounty Hunter"
+		"title": "BOUNTY HUNTER",
+		"desc" : "When the hunted tell tales of Gondar the Bounty Hunter, none are sure of which are true. In whispered tones they say he was abandoned as a kit, learning his skill in tracking as a matter of simple survival."
 	},
 	{
 		"fileName": "13.png",
-		"title": "Ursa",
-		"desc" : "Ursa"
+		"title": "URSA",
+		"desc" : "Ulfsaar the Warrior is the fiercest member of an ursine tribe, protective of his land and his people. During the long winters, while the mothers sleep and nurse their cubs, the males patrol the lands above as tireless."
 	},
 	{
 		"fileName": "14.png",
-		"title": "Gyrocopter",
-		"desc" : "Gyrocopter"
+		"title": "GYROCOPTER",
+		"desc" : "After serving through a lifetime of wars, upheaval, riots, and revolutions, the brass figured Aurel had seen enough. But in addition to a few trinkets and his considerable pension, the erstwhile engineer left with something far more interesting."
 	},
 	{
 		"fileName": "15.png",
-		"title": "Lone Druid",
-		"desc" : "Lone Druid"
+		"title": "LONE DRUID",
+		"desc" : "Long before the first words of the first histories there rose the druidic Bear Clan. Wise and just they were, and focused in their ways to seek an understanding of the natural order. The arch forces of nature saw this, and so sought the most learned."
 	},
 	{
 		"fileName": "16.png",
-		"title": "Naga Siren",
-		"desc" : "Naga Siren"
+		"title": "NAGA SIREN",
+		"desc" : "Among the high-sworn of the Slithereen Guard there is a solemn vow oft repeated before battle: No Slithereen may fail. In truth, these words are equal parts oath and enforceable covenant, for those who fall short of their duty."
 	}
 
 ]

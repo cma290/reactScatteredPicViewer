@@ -31,12 +31,12 @@ html,body {
   @at-root {
     .img-figure {
       position: absolute;
-      width: 320px;
+      width: 340px;
       height: 300px;
       margin: 0;
-      padding: 27px;
+      padding: 40px 37px 37px 37px;
       
-      background-color: #eee;
+      background-color: #fff;
       box-sizing: border-box;
       cursor: pointer;
 
@@ -70,10 +70,11 @@ html,body {
 
         color: #a7a0a2;
         font-size: 20px;
+        font-family: Impact, Charcoal, sans-serif;
         line-height: 1.25;
         text-align: left;
 
-        background-color: #eee;
+        background-color: #fff;
         /*border: 5px solid #73AD21;*/
         /*border-radius: 0px;*/
 
@@ -107,14 +108,14 @@ html,body {
       display:inline-block;
       margin: 0 -3px;
       padding:10px;
-      width: 40px;
-      height: 40px;
+      width: 30px;
+      height: 30px;
 
       text-align: center;
       vertical-align: middle;
       cursor: pointer;
       background-color: #999;
-      border-radius: 40%;
+      border-radius: 30%;
       
       transform: scale(.50);
       transition: transform .4s ease-in-out, left .6s ease-in-out, top .6s ease-in-out;
@@ -126,8 +127,8 @@ html,body {
         &::after{
           color: #fff;
           font-family: FontAwesome;
-          line-height: 40px;
-          font-size:25px;
+          line-height: 30px;
+          font-size:30px;
           content: "\f064";
 
           -webkit-font-smoothing: antialiased;

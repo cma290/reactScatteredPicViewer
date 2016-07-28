@@ -15,14 +15,14 @@ var ControllerUnit = React.createClass({
     e.stopPropagation();
   },
   render: function(){
-  	var controllerUnitClassName = "controller-unit";
+  	var controllerUnitClassName = 'controller-unit';
 
   	//append class to controll unit
   	if(this.props.arrange.isCenter){
-  		controllerUnitClassName += " is-center";
+  		controllerUnitClassName += ' is-center';
   		
   		if(this.props.arrange.isInverse){
-  			controllerUnitClassName += " is-inverse";
+  			controllerUnitClassName += ' is-inverse';
   		}
   	}
     return (
