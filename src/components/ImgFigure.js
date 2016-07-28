@@ -49,7 +49,6 @@ var ImgFigure = React.createClass({
 					   alt={this.props.data.title}/>
 				<figcaption>
 					<h2 className="img-title"> {this.props.data.title}</h2>
-          <div>  </div>
           <div className="img-back" onClick={this._handleClick}>
             <div> {this.props.data.desc} </div>
           </div>
