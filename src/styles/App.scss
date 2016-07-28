@@ -1,4 +1,12 @@
 /* Base Application Styles */
+@font-face{
+  font-family: "iconfont";
+  src: url("../fonts/icons/iconfont.eot") format("embedded-opentype"),
+  url("../fonts/icons/iconfont.woff") format("woff"), 
+  url("../fonts/icons/iconfont.ttf") format("truetype"), 
+  url("../fonts/icons/iconfont.svg") format("svg"); 
+}
+
 html,body {
   width: 100%;
   height: 100%;
@@ -100,24 +108,72 @@ html,body {
   width: 100%;
 
   text-align: center;
+  perspective: 1500px;
+  @at-root {
+    .controller-unit{
+      display:inline-block;
+      margin: 0 -3px;
+      padding:10px;
+      width: 40px;
+      height: 40px;
+
+      text-align: center;
+      vertical-align: middle;
+      cursor: pointer;
+      background-color: #999;
+      border-radius: 40%;
+      
+      transform: scale(.50);
+      transition: transform .4s ease-in-out, left .6s ease-in-out, top .6s ease-in-out;
+      
+      &.is-center {
+        background-color: #555;
+        transform: scale(1);
+
+        &::after{
+          color: #fff;
+          font-family: FontAwesome;
+          line-height: 40px;
+          font-size:25px;
+          content: "\f064";
+
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale; 
+        };
+
+        &.is-inverse{
+          transform: rotateY(180deg);
+          background-color: #555;
+        }
+        /*&.iconfont{
+          font-family:"iconfont" !important;
+          font-size:16px;font-style:normal;
+          -webkit-font-smoothing: antialiased;
+          -webkit-text-stroke-width: 0.2px;
+          -moz-osx-font-smoothing: grayscale;
+        }*/
+        
+      }
+    }
+  }
 }
 
 
 
 
 
-.index img {
-  margin: 40px auto;
-  border-radius: 4px;
-  background: #fff;
-  display: block;
-}
+    .index img {
+      margin: 40px auto;
+      border-radius: 4px;
+      background: #fff;
+      display: block;
+    }
 
-.index .notice {
-  margin: 20px auto;
-  padding: 15px 0;
-  text-align: center;
-  border: 1px solid #000;
-  border-width: 1px 0;
-  background: #666;
-}
+    .index .notice {
+      margin: 20px auto;
+      padding: 15px 0;
+      text-align: center;
+      border: 1px solid #000;
+      border-width: 1px 0;
+      background: #666;
+    }
