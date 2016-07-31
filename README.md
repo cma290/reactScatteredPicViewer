@@ -4,4 +4,4 @@
 ![Beta](https://img.shields.io/pypi/status/Django.svg)
 ![Twitter](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)
 ##Demo
-See [Demo](http://cma290.github.io/reactScatteredPicViewer/) here hosted on Github Pages.
+See [demo](http://cma290.github.io/reactScatteredPicViewer/) here hosted on Github Pages.
